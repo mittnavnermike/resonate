@@ -1,0 +1,68 @@
+canvas {
+  width: 800px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.parameters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'Stanley-Poster';
+  -webkit-font-smoothing: antialiased;
+  font-size: 50px;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  z-index: -1;
+}
+
+.parameters__item {
+  position: absolute;
+}
+
+.parameters__item--top {
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.parameters__item--right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.parameters__item--bottom {
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.parameters__item--left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
